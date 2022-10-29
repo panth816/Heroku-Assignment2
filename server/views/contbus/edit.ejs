@@ -1,0 +1,58 @@
+<%-include ('../partials/header.ejs');%>
+<%-include ('../partials/main_nav.ejs');%>
+<!-- Panth Patel
+     Assignment 2
+    301197341-->
+
+<!--content for the Add page-->
+<div class = "container" >
+    <div class = "row">
+        <div class ="offset-md-3 col-md-6"  id="info" >
+        <h1><%= title %></h1>
+        <form class = "form" method="POST" >
+            <div class ="form group">
+                <label for="nameTextField">Name</label>
+                <input type="text" class="form control"
+                id="nameTextField"
+                placeholder="Enter the contbus Title"
+                name="name"
+                value="<%=contbus.name%>"
+                required>
+            </div>
+<br>
+            <div class ="form group">
+                <label for="emailTextField">Email</label>
+                <input type="text" class="form control"
+                id="emailTextField"
+                placeholder="Enter the contbus's email"
+                name="email" 
+                value="<%=contbus.email%>"
+                required>
+            </div>
+
+            <br>
+
+            <div class ="form group">
+                <label for="cnumberTextField">Number</label>
+                <input type="number" class="form control"
+                id="cnumberTextField"
+                placeholder="Enter the contbus's cnumber"
+                name="number" 
+                value="<%=contbus.number%>"
+                required>
+            </div>
+            <br>
+            <br>
+            <button class = "btn btn-primary" type="submit"><i class ="fas fa-edit"></i>submit</button>
+            <a href='/contbusList' class="btn btn-warning"><i class="fas fa-undo"></i>cancel</a>  
+        
+        </form>
+        </div>
+        </div>
+    </div>
+
+
+  
+<%- include('../partials/bottom_nav'); -%>
+<%- include('../partials/footer'); -%>
+

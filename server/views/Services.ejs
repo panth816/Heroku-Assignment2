@@ -1,0 +1,51 @@
+<%-include ('partials/header.ejs');%>
+<%-include ('partials/main_nav.ejs');%>
+
+
+<style>
+   .common{
+       background-color: #CBC3E3;
+   }
+</style>  
+
+<body class="common">
+   <center>  
+ <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+<p>You need our services, Kindly go through the list below:</p>
+<div style="padding-top: 20px;">
+  <h2>
+      Projects
+  </h2>
+  <table>
+      <tr>
+          <td><img src="../Assets/images/service1.png" height="100px"></td>
+          <td>
+              <strong> General Programming </strong><br>
+              
+          </td>
+      </tr>
+      <tr>
+          <td><img src="../Assets/images/service2.png" height="100px"></td>
+          <td>
+              <strong> Web design </strong><br>
+               
+          </td>
+      </tr>
+      <tr>
+          <td><img src="../Assets/images/service3.png" height="100px"></td>
+          <td>
+              <strong> SQL Database Development</strong><br>
+              
+          </td>
+      </tr>
+  </table>
+  </div>
+  </center>
+</body>
+
+
+   <%-include ('partials/bottom_nav.ejs');%>
+<%-include ('partials/footer.ejs');%>   
+
+

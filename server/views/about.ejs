@@ -1,0 +1,41 @@
+<%-include ('partials/header.ejs');%>
+<%-include ('partials/main_nav.ejs');%>
+  
+
+<style>
+  .common{
+      background-color: #CBC3E3;
+  }
+</style>
+
+<body class="common">   
+  <h1><center><%= title %></center></h1>
+  <p><center>Welcome to About Me</center></p>
+  <p>
+      <center>
+      <img src="../Assets/images/personal.jpeg"  height="400px"; width="300px";/>
+      <table width="500px";>
+      <tr>
+          <td>Name: </td>
+          <td>Panth Patel</td>
+      </tr>
+      <tr>
+          <td valign="top">About Me : </td>
+          <td>
+              Hello, This is Panth Patel. I have completed a honours bachelors of Science degree with a double major in biochemistry and physiology from University of Toronto. I am currently working towards the completion of a diploma in software engineering from Centennial College.<br>
+              I have two year experience in sales and always looking to expand my knowledge.<br>
+          </td>
+      </tr>
+      <tr>
+          <td>Resume: </td>
+          <td><a href="../Assets/files/Resume.pdf">click here</a></td>
+      </tr>
+  </table>
+  </center>
+  </p>
+  <br><br>
+</body>
+
+    
+<%- include('partials/bottom_nav'); -%>
+<%- include('partials/footer'); -%>

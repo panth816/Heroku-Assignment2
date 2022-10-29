@@ -1,0 +1,42 @@
+<%-include ('../partials/header.ejs');%>
+<%-include ('../partials/main_nav.ejs');%>
+<!-- Panth Patel
+     Assignment 2
+    301197341-->
+
+
+<main class="container">
+
+ <div class="row">
+     <div class="col-md-offset-3 col md-8">
+         <h1><%= title %></h1>
+         <a href="/contbuslist/add" class="btn btn-primary" role="button"><i class="fas fa-plus-circle"></i>Add a contbus</a>
+         <br>
+         
+         <table class="table.table-bordered table-striped table-hover" id="customers">
+             <tr>
+                 <th class="text-content col-2">contbus-name</th>
+                 <th class="text-content col-2">Email</th>
+                
+                 <th class="text-content col-1">contbus Number</th>
+             </tr>
+             <%for(let count =0; count <contbusList.length; count++){%>
+                 <tr>
+                     <td class = "text-center col-2"><%=contbusList[count].name%></td>
+                     <td class = "text-center col-2"><%=contbusList[count].email%></td>
+                     <td class = "text-center col-1"><%=contbusList[count].number%></td>
+                     <td class="text-center col-1"><a href="/contbuslist/edit/<%=contbusList[count]._id%>" class="btn btn-primary"><i class="fas fa-pencil alt"></i>Update</a></td>
+                     <td class="text-center col-1"><a href="/contbuslist/delete/<%=contbusList[count]._id%>" class="btn btn-danger"><i class="fas fa-trash alt"></i>Delete</a></td>
+                 </tr>
+                 <%}%>
+         </table>
+        
+     </div>
+
+ </div>
+
+</main>
+  
+<%- include('../partials/bottom_nav'); -%>
+<%- include('../partials/footer'); -%>
+

@@ -1,0 +1,52 @@
+<%-include ('partials/header.ejs');%>
+<%-include ('partials/main_nav.ejs');%>
+
+<style>
+    .common{
+        background-color: #CBC3E3;
+    }
+</style> 
+
+<body class="common">  
+  <h1><%= title %></h1>
+   <p>Welcome to <%= title %></p>
+<p>Our products are as follows:</p>
+</table>
+<div style="padding-top: 20px;">
+<h2>
+    Projects
+</h2>
+<table>
+    <tr>
+        <td><img src="../Assets/images/project1.jpg" height="100px"></td>
+        <td>
+            <strong> C# </strong><br>
+            this tool is helpful in creating a visual application such as calculators in C# using textboxes and buttons.<br>
+            Role : Design
+        </td>
+    </tr>
+    <tr>
+        <td><img src="../Assets/images/project2.jpg" height="100px"></td>
+        <td>
+            <strong> Javascript </strong><br>
+            this tool is helpful for creating complex features on webpages. In this case it recommends normal calorie intake for users.<br>
+            Role : Implentation 
+        </td>
+    </tr>
+    <tr>
+        <td><img src="../Assets/images/project3.jpg" height="100px"></td>
+        <td>
+            <strong> SQL</strong><br>
+            This tool is helpful in all businesses to keep track of users and their needs. Helps to filter users according to any category in the table columns.<br>
+            Role : Documentation
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+
+
+<%- include('partials/bottom_nav'); -%>
+<%- include('partials/footer'); -%> 
+
+
